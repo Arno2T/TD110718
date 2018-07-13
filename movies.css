@@ -1,0 +1,99 @@
+body {
+    background-color: #17181b;
+    color: white;
+    font-family: Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 100vh;
+    width: 100vw;
+}
+header {
+    background-color: #17181b;
+    width: 100%;
+    text-align: center;
+    font-size: 30px; 
+}
+#poster {
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#poster img {
+    height: 280px;
+    width: 230px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 5px black;
+    transition: transform .5s;
+}
+figure {
+    margin: 20px;
+    height: 300px;
+    width: 250px;  
+}
+
+img:hover {
+    border: 3px solid #2b71b8;
+    transform: scale(1.4,1.4);
+}
+figcaption {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip ellipsis;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+/*======= 1024px ==============*/
+@media screen and (max-width: 1024px) {
+    body {
+        background-color: coral;
+    }
+    header {
+        font-size: 20px;
+    }
+    figure {
+        height: 180px;
+        width: 130px;
+    }
+    #poster img {
+        height: 180px;
+        width: 130px;
+    }
+}
+/*======= 720 px ==============*/
+@media screen and (max-width: 720px) {
+    body{
+        background-color: blue;
+    }
+    header {
+        font-size: 15px;
+    }
+    figure {
+        height: 120px;
+        width: 70px;
+    }
+    #poster {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    #poster img {
+        height: 120px;
+        width: 70px;
+    }
+    figcaption {
+        font-weight: normal;
+    }
+    img:hover {
+        border: none;
+        transform: none;
+    }
+   img:active {
+        border: 3px solid #2b71b8;
+        transform: scale(1.4,1.4); 
+    }
+
+}
