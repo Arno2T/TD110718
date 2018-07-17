@@ -1,0 +1,27 @@
+{
+  "name": "filrouge",
+  "version": "1.0.0",
+  "description": "fil rouge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "stencil-dev-server --root src --httpPort 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arno2T/TD110718.git"
+  },
+  "keywords": [
+    "fil",
+    "rouge"
+  ],
+  "author": "arno2T",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arno2T/TD110718/issues"
+  },
+  "homepage": "https://github.com/Arno2T/TD110718#readme",
+  "devDependencies": {
+    "@stencil/dev-server": "0.0.18"
+  }
+}
