@@ -52,6 +52,7 @@ figcaption {
 #backModal{
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
     position: absolute;
     top:150px;
     background-color: rgba(0,0,0,.5);
@@ -76,6 +77,7 @@ figcaption {
     border:none;
     margin-right: 50px;
     margin-left: 15px;
+    width: 30%;
 }
 .synopsis h4{
     margin-left:15px;
@@ -89,7 +91,9 @@ figcaption {
     color: white;
     cursor: pointer;
     height: 2em;
-
+}
+.synopsis p{
+    overflow: scroll;
 }
 
 #description{
